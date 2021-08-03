@@ -7,6 +7,8 @@ authors = ["david5010 <<>>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 discord = "^1.7.3"
+lxml = "^4.6.3"
+beautifulsoup4 = "^4.9.3"
 
 [tool.poetry.dev-dependencies]
 
