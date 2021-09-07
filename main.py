@@ -1,6 +1,8 @@
 import os
 import discord
 import scrapper as SC
+from continuous import keep_alive
+
 bot_token = os.environ['discord_token']
 
 client = discord.Client()
@@ -19,4 +21,5 @@ async def on_message(message):
     await message.channel.send(job.send_job_page())
     return
 
+keep_alive()
 client.run(bot_token)
